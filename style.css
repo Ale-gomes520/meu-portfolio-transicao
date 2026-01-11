@@ -117,3 +117,10 @@ text-decoration: none;
 color: #772b81;
 font-weight: 700;
 }
+header {
+  background: rgba(255, 255, 255, 0.1); /* Um brilho suave e transparente */
+  backdrop-filter: blur(10px);        /* Efeito de vidro fosco */
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
