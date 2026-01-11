@@ -1,0 +1,114 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, #8a71c9 0%, #8a71c9 100%) !important;;
+  background-attachment: fixed;
+  color: rgb(5, 4, 5);
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  background-color: #4a1569 !important; 
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  width: 100%;    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+h2{
+color:#ac22d6;
+font-size: 40px;
+}
+
+.titulo-roxo{
+color:#ae39c0;
+font-size: 45px; /* Aumente este número para a letra crescer */
+font-weight: bold;
+}
+
+.titulo-fucsia{
+color:#e41877;
+}
+
+.titulo-amarelo{
+color:#ffe26d91;
+}
+
+section{
+  max-width: 80%;       
+  margin: 0 auto;       
+  text-align: center;   
+  padding: 20px 0;
+}
+
+
+section p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+font-size: 60px;
+font-weight: 300;
+}
+
+h3{
+font-size:22px;
+font-style: italic;
+}
+
+
+p{
+line-height: 1.5;
+font-size: 20px;
+}
+
+img {
+  max-width: 400px; 
+  height: auto;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block; 
+}
+
+
+img {
+  max-width: 400px; 
+  height: auto;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block; 
+}
+
+
+.foto-perfil {
+  max-width: 400px;
+}
+
+
+.img-pequena {
+  max-width: 400px;
+}
+
+ul{
+list-style-type: none;
+line-height: 2;
+}
+
+a{
+text-decoration: none;
+color: #772b81;
+font-weight: 700;
+}
