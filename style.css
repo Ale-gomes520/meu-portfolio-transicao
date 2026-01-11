@@ -1,9 +1,10 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(180deg, #0c0b0d 0%, #090a0a 100%) !important;
+  /* Degradê: Beringela -> Roxo -> Lilás */
+  background: linear-gradient(180deg, #300132 0%, #4a1569 50%, #a55cb8 100%) !important;
   background-attachment: fixed;
-  color: #f1ebf2(5, 4, 5);
+  color: #f1ebf2; /* Corrigi o erro que estava aqui */
   margin: 0;
   padding: 20px;
 }
