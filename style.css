@@ -1,159 +1,128 @@
+/* Configuração Geral */
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  /* Degradê: Beringela -> Roxo -> Lilás */
   background: linear-gradient(180deg, #300132 0%, #4a1569 50%, #a55cb8 100%) !important;
   background-attachment: fixed;
-  color: #f1ebf2; /* Corrigi o erro que estava aqui */
+  color: #f1ebf2;
   margin: 0;
   padding: 20px;
 }
 
-button {
-  background-color: #4a1569 !important; 
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-h1, h2, h3, h4 {
+/* Removendo itálico de TODOS os títulos por garantia */
+h1, h2, h3, h4, .titulo-impacto, .titulo-narrativa, .titulo-transicao {
   text-align: center;
   width: 100%;    
   margin-left: auto;
   margin-right: auto;
+  font-style: normal !important; /* Aqui matamos o itálico */
 }
 
-
-h2{
-color:#a55cb8;
-font-size: 40px;
+/* Cabeçalho Efeito Vidro */
+header {
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Títulos das Seções: "Como tudo começou", "Minha História" */
-.titulo-narrativa {
-  color: #A55CB8; /* Roxo Ametista */
-  font-size: 42px;
-  font-weight: bold;
-  margin-top: 40px;
-  font-style: normal; /* Garante que não fique itálico */
-}
-
-/* Títulos de apoio ou detalhes da transição */
-.titulo-transicao {
-  color: #E9D5FF; /* Lilás Lavanda (muito legível) */
-  font-size: 35px;
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-/* Título Principal: "De Cabeleireira a Desenvolvedora" */
+/* Títulos de Impacto */
 .titulo-impacto {
-  color: #D447AB; /* Rosa Orquídea */
+  color: #D447AB; 
   font-size: 55px;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1;
-  /* Efeito de brilho Neon sutil */
-  text-shadow: 0 0 10px rgba(212, 71, 171, 0.5), 0 0 20px rgba(212, 71, 171, 0.3);
+  text-shadow: 0 0 15px rgba(212, 71, 171, 0.6);
   margin-bottom: 30px;
 }
 
-section{
-  max-width: 80%;       
-  margin: 0 auto;       
-  text-align: center;   
-  padding: 20px 0;
+.titulo-narrativa {
+  color: #A55CB8; 
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
-
-section p {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.titulo-transicao {
+  color: #E9D5FF; 
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-h1{
-font-size: 60px;
-font-weight: 300;
+/* Textos */
+p {
+  line-height: 1.6;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 15px auto;
 }
 
-h3{
-font-size:22px;
-font-style: normal;
-}
-
-
-p{
-line-height: 1.5;
-font-size: 20px;
-}
-
+/* IMAGENS COM EFEITO ESPECIAL */
 img {
   max-width: 400px; 
   height: auto;
-  border-radius: 15px;
-  margin: 20px auto;
-  display: block; 
+  display: block;
+  margin: 40px auto;
+  
+  /* Borda arredondada e iluminação */
+  border-radius: 20px;
+  border: 3px solid rgba(212, 71, 171, 0.3); /* Borda rosa sutil */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(165, 92, 184, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-img {
-  max-width: 400px; 
-  height: auto;
-  border-radius: 15px;
-  margin: 20px auto;
-  display: block; 
+/* Efeito quando passa o mouse na imagem */
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 71, 171, 0.6);
+  border-color: #D447AB;
 }
 
-
-.foto-perfil {
-  max-width: 400px;
-}
-
-
-.img-pequena {
-  max-width: 400px;
-}
-
-ul{
-list-style-type: none;
-line-height: 2;
-}
-
-a{
-text-decoration: none;
-color: #772b81;
-font-weight: 700;
-}
-header {
-  background: rgba(255, 255, 255, 0.1); /* Um brilho suave e transparente */
-  backdrop-filter: blur(10px);        /* Efeito de vidro fosco */
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
-
-/* Estilo para os links do menu que criamos antes */
+/* Menu de Navegação */
 .menu-transicao a {
   text-decoration: none;
-  padding: 12px 20px;
+  padding: 12px 25px;
   font-size: 18px;
   font-weight: bold;
   color: #f1ebf2;
   border: 2px solid #a55cb8;
-  border-radius: 8px;
+  border-radius: 10px;
   background: rgba(74, 21, 105, 0.4);
   transition: 0.3s;
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
 }
 
 .menu-transicao a:hover {
   background: #a55cb8;
   color: white;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #a55cb8;
+  transform: translateY(-3px); /* Leve pulinho para cima */
+  box-shadow: 0 5px 15px rgba(165, 92, 184, 0.7);
+}
+
+/* Botões e Formulário */
+button {
+  background-color: #D447AB !important; 
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #a55cb8 !important;
+  box-shadow: 0 0 10px #D447AB;
+}
+
+section {
+  max-width: 85%;       
+  margin: 0 auto;       
+  padding: 40px 0;
 }
