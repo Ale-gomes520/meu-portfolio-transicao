@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(180deg, #8a71c9 0%, #8a71c9 100%) !important;;
+  background: linear-gradient(180deg, #371057 0%, #371057 100%) !important;;
   background-attachment: fixed;
   color: rgb(5, 4, 5);
   margin: 0;
@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 
 
 h2{
-color:#ac22d6;
+color:#7022d6;
 font-size: 40px;
 }
 
