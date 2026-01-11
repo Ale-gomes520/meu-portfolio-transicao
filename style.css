@@ -32,22 +32,33 @@ color:#a55cb8;
 font-size: 40px;
 }
 
-.titulo-roxo{
-color:#ae39c0;
-font-size: 45px; /* Aumente este número para a letra crescer */
-font-weight: bold;
+/* Títulos das Seções: "Como tudo começou", "Minha História" */
+.titulo-narrativa {
+  color: #A55CB8; /* Roxo Ametista */
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 40px;
+  font-style: normal; /* Garante que não fique itálico */
 }
 
-.titulo-roxo escuro{
-color:#14031c;
-font-size: 45px;  
-font-weight: bold;
+/* Títulos de apoio ou detalhes da transição */
+.titulo-transicao {
+  color: #E9D5FF; /* Lilás Lavanda (muito legível) */
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
-.titulo-amarelo{
-color:#ba700f;
-font-size: 45px;
-font-weight: bold;
+/* Título Principal: "De Cabeleireira a Desenvolvedora" */
+.titulo-impacto {
+  color: #D447AB; /* Rosa Orquídea */
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  /* Efeito de brilho Neon sutil */
+  text-shadow: 0 0 10px rgba(212, 71, 171, 0.5), 0 0 20px rgba(212, 71, 171, 0.3);
+  margin-bottom: 30px;
 }
 
 section{
@@ -125,17 +136,19 @@ header {
   margin-bottom: 30px;
 }
 
+/* Estilo para os links do menu que criamos antes */
 .menu-transicao a {
-  text-decoration: none;   /* Remove o sublinhado azul de link */
-  padding: 15px 25px;      
-  font-size: 22px;         
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
   font-weight: bold;
-  color: #f1ebf2;          
-  border: 2px solid #a55cb8; 
-  border-radius: 10px;     
-  background: rgba(74, 21, 105, 0.3); 
+  color: #f1ebf2;
+  border: 2px solid #a55cb8;
+  border-radius: 8px;
+  background: rgba(74, 21, 105, 0.4);
   transition: 0.3s;
-  display: inline-block;    /* Garante que o tamanho e as bordas fiquem certas */
+  display: inline-block;
+  margin: 5px;
 }
 
 .menu-transicao a:hover {
